@@ -2,7 +2,7 @@ import { config } from 'dotenv';
 import {app,server,io} from './lib/socket.js';
 
 import db from './lib/db.js';
-
+import express from 'express';
 import bodyParser from 'body-parser';
 import authRoutes from './routes/auth.js';
 import msgRoutes from './routes/msg.js';
