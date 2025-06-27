@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Tailwind ke imports ke BAAD likh */
+html,
+body,
+#root {
+  height: 100%;
+}
