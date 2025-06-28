@@ -26,12 +26,6 @@ app.use(cors({
 app.use('/chat/auth',authRoutes);
 app.use('/chat/msg',msgRoutes);
 
-app._router.stack.forEach((r) => {
-  if (r.route) {
-    console.log("ROUTE:", r.route.path);
-  }
-});
-
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
